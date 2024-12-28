@@ -1,7 +1,7 @@
 title: "Google Prompting Essentials"
 description: "A blog about Google Prompting Essentials"
-baseurl: ""
-url: "https://phuongvo9.github.io/google-prompting-essentials"
+baseurl: "/google-prompting-essentials"
+url: "https://phuongvo9.github.io"
 author:
   name: Phuong Vo
   email: phuongvo9@github.io

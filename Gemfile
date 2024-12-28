@@ -1,0 +1,10 @@
+source "https://rubygems.org"
+
+gem "jekyll", "~> 4.2.0"
+gem "webrick", "~> 1.7"
+gem "logger", "~> 1.4"
+gem "csv", "~> 3.2"
+gem "ostruct", "~> 0.3"
+gem "base64", "~> 0.1"
+gem "bigdecimal", "~> 3.1"
+gem "minima", "~> 2.5"

@@ -1,27 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - {{ site.title }}</title>
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-</head>
-<body>
-    {% include header.html %}
-    
-    <main>
-        <h1>Welcome to {{ site.title }}</h1>
-        <p>Explore our technical blogs and tutorials.</p>
-        
-        <h2>Recent Posts</h2>
-        <ul>
-            {% for post in site.posts %}
-                <li>
-                    <a href="{{ post.url }}">{{ post.title }}</a>
-                    <em>Published on {{ post.date | date: "%B %d, %Y" }}</em>
-                </li>
-            {% endfor %}
-        </ul>
-    </main>
-</body>
-</html>
+---
+layout: default
+title: Home
+---
+
+<h1>Welcome to {{ site.title }}</h1>
+<p>Explore our technical blogs and tutorials.</p>
+
+<h2>Recent Posts</h2>
+<ul>
+    {% for post in site.posts %}
+        <li>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a> 
+            Published on {{ post.date | date: "%B %d, %Y" }}
+        </li>
+    {% endfor %}
+</ul>

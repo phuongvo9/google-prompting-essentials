@@ -1,0 +1,21 @@
+# Jekyll build directory
+_site/
+
+# Jekyll cache directory
+.jekyll-cache/
+
+# Ruby dependencies
+/vendor/bundle/
+.bundle/
+
+# Logs
+/log/
+tmp/
+
+# OS generated files
+.DS_Store
+
+# Editor directories and files
+*.swp
+*.swo
+*~
